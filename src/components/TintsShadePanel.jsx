@@ -1,0 +1,1 @@
+export default function TintsShadePanel() { return <div className="p-4 border border-dashed border-gray-700 text-gray-500 rounded text-center text-xs uppercase tracking-wider">TintsShadePanel Placeholder</div>; }

@@ -1,0 +1,1 @@
+export default function ColorSliders() { return <div className="p-4 border border-dashed border-gray-700 text-gray-500 rounded text-center text-xs uppercase tracking-wider">ColorSliders Placeholder</div>; }

@@ -1,0 +1,1 @@
+export default function UIPreviewPanel() { return <div className="p-4 border border-dashed border-gray-700 text-gray-500 rounded text-center text-xs uppercase tracking-wider">UIPreviewPanel Placeholder</div>; }
