@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { History, Heart, Trash2, Clock } from 'lucide-react';
 import { oklchToHex } from '../utils/colorUtils';
 
-const STORAGE_KEY = 'huxandhue_palette_history';
+const STORAGE_KEY = 'hexandhue_palette_history';
 const MAX_HISTORY = 20;
 
 // Custom hook for palette history
@@ -54,18 +54,62 @@ export function usePaletteHistory() {
     });
   }, []);
 
-  const toggleFavorite = useCallback((paletteId) => {
-    setFavorites(prev => 
-      prev.includes(paletteId) 
-        ? prev.filter(id => id !== paletteId)
-        : [...prev, paletteId]
-    );
+  const toggleFavorite = useCallback((paletteOrId) => {
+    // If it's an array (palette colors), find the matching entry by colors
+    if (Array.isArray(paletteOrId)) {
+      const palette = paletteOrId;
+      setHistory(prev => {
+        const existingEntry = prev.find(entry =>
+          entry.colors.length === palette.length &&
+          entry.colors.every((c, i) => oklchToHex(c) === oklchToHex(palette[i]))
+        );
+
+        if (existingEntry) {
+          // Toggle favorite for existing entry
+          setFavorites(favs =>
+            favs.includes(existingEntry.id)
+              ? favs.filter(id => id !== existingEntry.id)
+              : [...favs, existingEntry.id]
+          );
+          return prev;
+        } else {
+          // Add new entry and mark as favorite
+          const newEntry = {
+            id: Date.now(),
+            colors: palette,
+            timestamp: new Date().toISOString(),
+          };
+          setFavorites(favs => [...favs, newEntry.id]);
+          return [newEntry, ...prev].slice(0, MAX_HISTORY);
+        }
+      });
+    } else {
+      // It's an ID
+      setFavorites(prev =>
+        prev.includes(paletteOrId)
+          ? prev.filter(id => id !== paletteOrId)
+          : [...prev, paletteOrId]
+      );
+    }
   }, []);
 
   const removeFromHistory = useCallback((paletteId) => {
     setHistory(prev => prev.filter(p => p.id !== paletteId));
     setFavorites(prev => prev.filter(id => id !== paletteId));
   }, []);
+
+  const removeFromFavorites = useCallback((paletteId) => {
+    setFavorites(prev => prev.filter(id => id !== paletteId));
+  }, []);
+
+  const isFavorite = useCallback((palette) => {
+    if (!palette || palette.length === 0) return false;
+    return history.some(entry =>
+      favorites.includes(entry.id) &&
+      entry.colors.length === palette.length &&
+      entry.colors.every((c, i) => oklchToHex(c) === oklchToHex(palette[i]))
+    );
+  }, [history, favorites]);
 
   const clearHistory = useCallback(() => {
     setHistory([]);
@@ -78,6 +122,8 @@ export function usePaletteHistory() {
     addToHistory,
     toggleFavorite,
     removeFromHistory,
+    removeFromFavorites,
+    isFavorite,
     clearHistory,
   };
 }

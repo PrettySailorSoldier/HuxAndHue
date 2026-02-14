@@ -1,14 +1,14 @@
-# HUX&HUE REBRANDING CHECKLIST
+# HEX&HUE REBRANDING CHECKLIST
 
 ## ✅ Files Updated
 
 ### Core App Files
-- [x] `index.html` - Updated page title to "Hux&Hue — Color Theory Studio"
-- [x] `package.json` - Changed name from "colorwheelapp" to "huxandhue"
-- [x] `App.jsx` - Updated header logo text from "Chromatic" to "Hux&Hue"
+- [x] `index.html` - Updated page title to "hex&hue — Color Theory Studio"
+- [x] `package.json` - Changed name from "colorwheelapp" to "hexandhue"
+- [x] `App.jsx` - Updated header logo text from "Chromatic" to "hex&hue"
 
 ### Brand Assets Created
-- [x] `HUX_AND_HUE_BRAND_GUIDE.md` - Complete brand identity guide
+- [x] `HEX_AND_HUE_BRAND_GUIDE.md` - Complete brand identity guide
 
 ---
 
@@ -21,18 +21,18 @@
 
 ### Domain & Hosting (This Week)
 - [ ] Check domain availability:
-  - [ ] HuxAndHue.com (primary)
-  - [ ] HuxHue.com (backup)
-  - [ ] HuxAndHue.app (optional)
+  - [ ] hexandhue.com (primary)
+  - [ ] hexhue.com (backup)
+  - [ ] hexandhue.app (optional)
 - [ ] Register chosen domain(s)
 - [ ] Set up basic landing page or "coming soon"
 
 ### Social Media (This Week)
 - [ ] Secure social handles:
-  - [ ] Twitter/X: @huxandhue
-  - [ ] Instagram: @huxandhue
-  - [ ] GitHub: huxandhue
-  - [ ] Reddit: u/huxandhue
+  - [ ] Twitter/X: @hexandhue
+  - [ ] Instagram: @hexandhue
+  - [ ] GitHub: hexandhue
+  - [ ] Reddit: u/hexandhue
 - [ ] Create basic profile images (can be text-based for now)
 
 ### Visual Identity (Next Week)
@@ -76,12 +76,12 @@ grep -ri "chromatic" src/
 Since you want a color wheel for the main interface, consider:
 
 ### Favicon options:
-1. **Simple "H&" text** in Fraunces font
+1. **Simple "h&" text** in Fraunces font
 2. **Minimalist color wheel** (small, recognizable at 16x16)
 3. **Ampersand with color gradient**
 
 ### Full logo concepts:
-1. **Text only** - "Hux&Hue" in Fraunces (current approach)
+1. **Text only** - "hex&hue" in Fraunces (current approach)
 2. **Icon + text** - Small wheel icon next to name
 3. **Integrated** - Color wheel forming the "&" symbol
 
@@ -118,7 +118,7 @@ Since you want a color wheel for the main interface, consider:
 - [ ] Privacy policy page
 - [ ] Terms of service
 - [ ] Cookie consent (if needed)
-- [ ] Email set up (hello@huxandhue.com)
+- [ ] Email set up (hello@hexandhue.com)
 
 ### Marketing:
 - [ ] Twitter bio written
@@ -131,7 +131,7 @@ Since you want a color wheel for the main interface, consider:
 ## 💬 Announcement Copy (Draft)
 
 ### Twitter Launch:
-> 🎨 Introducing Hux&Hue
+> 🎨 Introducing hex&hue
 > 
 > The color tool that bridges digital and physical:
 > • Smart palette generation
@@ -142,9 +142,9 @@ Since you want a color wheel for the main interface, consider:
 > Free to use → [link]
 
 ### Reddit r/webdev:
-> I built Hux&Hue - a color tool with design intelligence
+> I built hex&hue - a color tool with design intelligence
 >
-> Most color pickers just do math. Hux&Hue understands context:
+> Most color pickers just do math. hex&hue understands context:
 > - Generate UI palettes (WCAG compliant)
 > - Get paint mixing recipes for traditional art
 > - Real-time palette analysis with one-click fixes
@@ -179,7 +179,7 @@ Since you want a color wheel for the main interface, consider:
 ## 📝 Notes
 
 **The "&" is your brand signature.** Use it consistently:
-- Always "Hux&Hue" not "Hux and Hue"
+- Always "hex&hue" not "hex and hue"
 - The ampersand symbolizes the bridge between digital and physical
 - It makes the name memorable and searchable
 
@@ -199,11 +199,11 @@ Since you want a color wheel for the main interface, consider:
 
 ## 🔗 Quick Links (To Set Up)
 
-- Domain: [HuxAndHue.com]
-- Twitter: [@huxandhue]
-- GitHub: [github.com/huxandhue]
-- Email: [hello@huxandhue.com]
-- Docs: [docs.huxandhue.com]
+- Domain: [hexandhue.com]
+- Twitter: [@hexandhue]
+- GitHub: [github.com/hexandhue]
+- Email: [hello@hexandhue.com]
+- Docs: [docs.hexandhue.com]
 
 ---
 

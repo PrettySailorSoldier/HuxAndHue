@@ -209,7 +209,7 @@ export default function App() {
               <Palette size={18} className="text-white drop-shadow" />
             </div>
             <div>
-              <h1 className="font-display text-lg font-semibold tracking-tight">Hux&Hue</h1>
+              <h1 className="font-display text-lg font-semibold tracking-tight">hex&hue</h1>
               <p className="text-[10px] text-[#55556a] hidden sm:block">Color Theory Studio</p>
             </div>
           </div>
@@ -407,7 +407,7 @@ export default function App() {
 
           <div className="lg:col-span-3 space-y-5">
             <div className="bg-[#12121a] rounded-2xl p-5 border border-[#1a1a24]">
-              <PaletteHistory history={history} favorites={favorites} onSelectPalette={handlePaletteFromHistory} onRemoveFromHistory={removeFromHistory} onRemoveFromFavorites={removeFromFavorites} onToggleFavorite={toggleFavorite} onClearHistory={clearHistory} isFavorite={isFavorite} />
+              <PaletteHistory history={history} favorites={favorites} onSelect={handlePaletteFromHistory} onRemove={removeFromHistory} onToggleFavorite={toggleFavorite} onClear={clearHistory} />
             </div>
 
             {activePalette.length > 0 && (

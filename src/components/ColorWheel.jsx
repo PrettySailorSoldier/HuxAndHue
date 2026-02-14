@@ -169,7 +169,7 @@ const ColorWheel = ({ selectedColor, onColorSelect, size = 400 }) => {
           }}
         >
           <div className="text-white text-center font-bold">
-            <div className="text-xs opacity-70">Hux&Hue</div>
+            <div className="text-xs opacity-70">hex&hue</div>
           </div>
         </div>
       </div>

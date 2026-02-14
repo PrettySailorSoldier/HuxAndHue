@@ -1,8 +1,8 @@
-# HUX&HUE BRAND GUIDE
+# HEX&HUE BRAND GUIDE
 
 ## 🎨 Brand Identity
 
-**Name:** Hux&Hue  
+**Name:** hex&hue  
 **Tagline:** Color Theory Studio  
 **Mission:** Bridge digital color theory with physical paint mixing
 
@@ -11,25 +11,25 @@
 ## 📝 Name Usage
 
 ### Correct:
-- **Hux&Hue** (with ampersand)
-- **Hux&Hue Pro** (premium tier)
-- **Hux&Hue Studio** (desktop app, if applicable)
+- **hex&hue** (with ampersand)
+- **hex&hue Pro** (premium tier)
+- **hex&hue Studio** (desktop app, if applicable)
 
 ### Acceptable variations:
-- **HuxAndHue** (domains, social handles where & not allowed)
-- **HuxHue** (shortened for space constraints)
+- **hexandhue** (domains, social handles where & not allowed)
+- **hexhue** (shortened for space constraints)
 
 ### Incorrect:
-- ~~Hux and Hue~~ (spelled out)
-- ~~Hux & Hue~~ (with spaces around &)
-- ~~HuxnHue~~ (using n)
-- ~~Hux+Hue~~ (plus sign)
+- ~~hex and hue~~ (spelled out)
+- ~~hex & hue~~ (with spaces around &)
+- ~~hexnhue~~ (using n)
+- ~~hex+hue~~ (plus sign)
 
 ---
 
 ## 🎯 Brand Personality
 
-**If Hux&Hue were a person:**
+**If hex&hue were a person:**
 - Creative but practical
 - Knowledgeable but not pretentious
 - Friendly guide, not cold professor
@@ -54,14 +54,14 @@
 ## 💬 Brand Voice Examples
 
 ### ✅ Good:
-> "Hux&Hue helps you understand why colors work together, whether you're designing a website or mixing paint."
+> "hex&hue helps you understand why colors work together, whether you're designing a website or mixing paint."
 
-> "Not sure which shadow color to use? Hux&Hue analyzes your palette and suggests warm or cool shadows based on color temperature theory."
+> "Not sure which shadow color to use? hex&hue analyzes your palette and suggests warm or cool shadows based on color temperature theory."
 
 > "Generate paint mixing recipes from digital colors. Know exactly which watercolors to mix for that perfect purple."
 
 ### ❌ Avoid:
-> "Hux&Hue is the ULTIMATE color tool!" (too salesy)
+> "hex&hue is the ULTIMATE color tool!" (too salesy)
 
 > "Utilize our sophisticated algorithmic analysis to optimize chromatic relationships." (too technical/jargon)
 
@@ -105,18 +105,18 @@
 ## 🌐 Domain & Social
 
 ### Domains
-**Primary:** HuxAndHue.com  
-**Alternates:** HuxHue.com, HuxAndHue.app
+**Primary:** hexandhue.com  
+**Alternates:** hexhue.com, hexandhue.app
 
 ### Social Media
-**Handle:** @huxandhue (all platforms)
-- Twitter/X: @huxandhue
-- Instagram: @huxandhue
-- TikTok: @huxandhue
-- Reddit: u/huxandhue
+**Handle:** @hexandhue (all platforms)
+- Twitter/X: @hexandhue
+- Instagram: @hexandhue
+- TikTok: @hexandhue
+- Reddit: u/hexandhue
 
 ### Hashtags
-- #HuxAndHue (primary)
+- #hexandhue (primary)
 - #ColorTheory
 - #PaintMixing
 - #DigitalToPhysical
@@ -126,13 +126,13 @@
 
 ## 📦 Product Tiers
 
-### Free Tier: **Hux&Hue**
+### Free Tier: **hex&hue**
 - Core color wheel
 - Basic harmonies
 - Color analysis
 - Limited exports
 
-### Premium Tier: **Hux&Hue Pro**
+### Premium Tier: **hex&hue Pro**
 - All harmony types
 - Paint mixing database (500+ colors)
 - Unlimited exports
@@ -228,8 +228,8 @@
 ### Video Demo Ideas:
 1. "Watch me fix this ugly palette in 30 seconds"
 2. "Digital color → Physical paint mixing"
-3. "UI designer reacts to Hux&Hue analysis"
-4. "Compare: Hux&Hue vs. Adobe Color"
+3. "UI designer reacts to hex&hue analysis"
+4. "Compare: hex&hue vs. Adobe Color"
 
 ---
 
@@ -256,7 +256,7 @@
 ## 🎨 Logo Concepts (Text-based for now)
 
 ```
-Hux&Hue
+hex&hue
 ━━━━━━━━━━
 Color Theory Studio
 ```
@@ -329,19 +329,19 @@ Color Theory Studio
 
 ## 🔮 Future Product Extensions
 
-### Hux&Hue Mobile
+### hex&hue Mobile
 - iOS/Android apps
 - Camera-based color extraction
 - Save palettes to device
 - Offline access to paint mixing
 
-### Hux&Hue Desktop
+### hex&hue Desktop
 - Tauri app for Mac/Windows
 - System color picker integration
 - Local file exports
 - Faster performance
 
-### Hux&Hue Plugin
+### hex&hue Plugin
 - Figma plugin
 - Adobe XD plugin
 - Sketch plugin
@@ -367,6 +367,6 @@ Color Theory Studio
 
 ---
 
-**Remember:** Hux&Hue is not just another color picker. It's a bridge between digital and physical color, between theory and practice, between knowing and doing.
+**Remember:** hex&hue is not just another color picker. It's a bridge between digital and physical color, between theory and practice, between knowing and doing.
 
 **Brand essence:** Thoughtful color, made accessible.
