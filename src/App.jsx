@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { 
   Palette, Sparkles, Layers, Grid3X3, Image, 
-  Blend, BookOpen, Eye, Star, TrendingUp
+  Blend, BookOpen, Eye, Star, TrendingUp, FlaskConical, Waves
 } from 'lucide-react';
 import { parse } from 'culori';
 
@@ -23,6 +23,8 @@ import PaletteHistory, { usePaletteHistory } from './components/PaletteHistory';
 import UIPreviewPanel from './components/UIPreviewPanel';
 import CuratedPalettes from './components/CuratedPalettes';
 import HarmonyMixer from './components/HarmonyMixer';
+import VibeHarmony from './components/VibeHarmony';
+import PaintMixer from './components/PaintMixer';
 
 import { 
   toOklch, 
@@ -186,6 +188,7 @@ export default function App() {
   const TABS = [
     { id: 'harmonies', label: 'Harmonies', icon: Grid3X3 },
     { id: 'smart', label: 'Smart', icon: Sparkles },
+    { id: 'vibe', label: 'Vibe', icon: Waves },
     { id: 'mood', label: 'Moods', icon: Sparkles },
     { id: 'extract', label: 'Extract', icon: Image },
     { id: 'gradient', label: 'Gradients', icon: Blend },
@@ -193,6 +196,7 @@ export default function App() {
     { id: 'inspire', label: 'Inspire', icon: BookOpen },
     { id: 'preview', label: 'Preview', icon: Eye },
     { id: 'doctor', label: 'Doctor', icon: TrendingUp },
+    { id: 'paint', label: 'Paint', icon: FlaskConical },
   ];
 
   return (
@@ -346,6 +350,21 @@ export default function App() {
                 <PaletteDoctor 
                   colors={activePalette.length > 0 ? activePalette : harmonyColors} 
                   onApplyFix={handleApplyFix}
+                />
+              )}
+
+              {activeTab === 'vibe' && (
+                <VibeHarmony
+                  baseColor={selectedColor}
+                  onPaletteGenerate={handleMixedPalette}
+                  onColorSelect={handleColorSelect}
+                />
+              )}
+
+              {activeTab === 'paint' && (
+                <PaintMixer
+                  baseColor={selectedColor}
+                  onColorSelect={handleColorSelect}
                 />
               )}
 

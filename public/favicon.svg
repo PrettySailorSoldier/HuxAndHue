@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#0a0a0f"/>
+
+  <!-- Segmented colour wheel, 12 segments, 2 rings -->
+  <!-- Ring 1 (outer) - full saturation segments -->
+  <path d="M16,16 L23.46,9.54 A10.5,10.5 0 0,1 24.9,11.7 Z" fill="#E85520" opacity="0.95"/>
+  <path d="M16,16 L24.9,11.7 A10.5,10.5 0 0,1 25.5,14.25 Z" fill="#F5C842" opacity="0.95"/>
+  <path d="M16,16 L25.5,14.25 A10.5,10.5 0 0,1 25.5,17.75 Z" fill="#4ade80" opacity="0.95"/>
+  <path d="M16,16 L25.5,17.75 A10.5,10.5 0 0,1 24.9,20.3 Z" fill="#22d3ee" opacity="0.95"/>
+  <path d="M16,16 L24.9,20.3 A10.5,10.5 0 0,1 23.46,22.46 Z" fill="#3b82f6" opacity="0.95"/>
+  <path d="M16,16 L23.46,22.46 A10.5,10.5 0 0,1 21.3,24.1 Z" fill="#8b5cf6" opacity="0.95"/>
+  <path d="M16,16 L21.3,24.1 A10.5,10.5 0 0,1 18.75,25.2 Z" fill="#d946ef" opacity="0.95"/>
+  <path d="M16,16 L18.75,25.2 A10.5,10.5 0 0,1 16,25.5 Z" fill="#f43f5e" opacity="0.95"/>
+  <path d="M16,16 L16,25.5 A10.5,10.5 0 0,1 13.25,25.2 Z" fill="#C82020" opacity="0.95"/>
+  <path d="M16,16 L13.25,25.2 A10.5,10.5 0 0,1 10.7,24.1 Z" fill="#f97316" opacity="0.95"/>
+  <path d="M16,16 L10.7,24.1 A10.5,10.5 0 0,1 8.54,22.46 Z" fill="#eab308" opacity="0.95"/>
+  <path d="M16,16 L8.54,22.46 A10.5,10.5 0 0,1 7.1,20.3 Z" fill="#84cc16" opacity="0.95"/>
+  <path d="M16,16 L7.1,20.3 A10.5,10.5 0 0,1 6.5,17.75 Z" fill="#10b981" opacity="0.95"/>
+  <path d="M16,16 L6.5,17.75 A10.5,10.5 0 0,1 6.5,14.25 Z" fill="#06b6d4" opacity="0.95"/>
+  <path d="M16,16 L6.5,14.25 A10.5,10.5 0 0,1 7.1,11.7 Z" fill="#6366f1" opacity="0.95"/>
+  <path d="M16,16 L7.1,11.7 A10.5,10.5 0 0,1 8.54,9.54 Z" fill="#a855f7" opacity="0.95"/>
+  <path d="M16,16 L8.54,9.54 A10.5,10.5 0 0,1 10.7,7.9 Z" fill="#ec4899" opacity="0.95"/>
+  <path d="M16,16 L10.7,7.9 A10.5,10.5 0 0,1 13.25,6.8 Z" fill="#ff6b4a" opacity="0.95"/>
+  <path d="M16,16 L13.25,6.8 A10.5,10.5 0 0,1 16,6.5 Z" fill="#E85520" opacity="0.9"/>
+  <path d="M16,16 L16,6.5 A10.5,10.5 0 0,1 18.75,6.8 Z" fill="#F5C842" opacity="0.9"/>
+  <path d="M16,16 L18.75,6.8 A10.5,10.5 0 0,1 21.3,7.9 Z" fill="#4ade80" opacity="0.9"/>
+  <path d="M16,16 L21.3,7.9 A10.5,10.5 0 0,1 23.46,9.54 Z" fill="#3b82f6" opacity="0.9"/>
+
+  <!-- Inner dark ring to create gap / depth -->
+  <circle cx="16" cy="16" r="7" fill="#0a0a0f"/>
+
+  <!-- h&amp; text in center -->
+  <text x="16" y="19.5" text-anchor="middle" font-family="Georgia, serif" font-size="8" font-weight="bold" fill="#f0f0f5">h&amp;</text>
+</svg>
