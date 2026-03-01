@@ -1,7 +1,8 @@
 import { useState, useCallback, useEffect } from 'react';
 import { 
   Palette, Sparkles, Layers, Grid3X3, Image, 
-  Blend, BookOpen, Eye, Star, TrendingUp, FlaskConical, Waves
+  Blend, BookOpen, Eye, Star, TrendingUp, FlaskConical, Waves,
+  Download, Sun
 } from 'lucide-react';
 import { parse } from 'culori';
 
@@ -25,6 +26,9 @@ import CuratedPalettes from './components/CuratedPalettes';
 import HarmonyMixer from './components/HarmonyMixer';
 import VibeHarmony from './components/VibeHarmony';
 import PaintMixer from './components/PaintMixer';
+import ExportPanel from './components/ExportPanel';
+import AccessibilityChecker from './components/AccessibilityChecker';
+import ShadowHighlight from './components/ShadowHighlight';
 
 import { 
   toOklch, 
@@ -195,8 +199,11 @@ export default function App() {
     { id: 'mixer', label: 'Mixer', icon: Layers },
     { id: 'inspire', label: 'Inspire', icon: BookOpen },
     { id: 'preview', label: 'Preview', icon: Eye },
+    { id: 'shadow', label: 'Shadow', icon: Sun },
     { id: 'doctor', label: 'Doctor', icon: TrendingUp },
+    { id: 'access', label: 'WCAG', icon: Eye },
     { id: 'paint', label: 'Paint', icon: FlaskConical },
+    { id: 'export', label: 'Export', icon: Download },
   ];
 
   return (
@@ -363,6 +370,27 @@ export default function App() {
 
               {activeTab === 'paint' && (
                 <PaintMixer
+                  baseColor={selectedColor}
+                  onColorSelect={handleColorSelect}
+                />
+              )}
+
+              {activeTab === 'export' && (
+                <ExportPanel
+                  colors={activePalette.length > 0 ? activePalette : harmonyColors}
+                  paletteLabel={selectedHarmony || 'Palette'}
+                />
+              )}
+
+              {activeTab === 'access' && (
+                <AccessibilityChecker
+                  colors={activePalette.length > 0 ? activePalette : harmonyColors}
+                  baseColor={selectedColor}
+                />
+              )}
+
+              {activeTab === 'shadow' && (
+                <ShadowHighlight
                   baseColor={selectedColor}
                   onColorSelect={handleColorSelect}
                 />
