@@ -1,8 +1,8 @@
 import { useState, useCallback, useEffect } from 'react';
-import { 
-  Palette, Sparkles, Layers, Grid3X3, Image, 
+import {
+  Palette, Sparkles, Layers, Grid3X3, Image,
   Blend, BookOpen, Eye, Star, TrendingUp, FlaskConical, Waves,
-  Download, Sun
+  Download, Sun, Save, Check, Heart
 } from 'lucide-react';
 import { parse } from 'culori';
 
@@ -59,11 +59,21 @@ export default function App() {
   const [moodPalette, setMoodPalette] = useState([]);
   const [lockedIndices, setLockedIndices] = useState([]);
   const [designContext, setDesignContext] = useState('ui');
+  const [savedFeedback, setSavedFeedback] = useState(false);
 
   const {
     history, favorites, addToHistory, removeFromHistory,
     removeFromFavorites, clearHistory, isFavorite, toggleFavorite
   } = usePaletteHistory();
+
+  const handleSavePalette = useCallback(() => {
+    const paletteToSave = activePalette.length > 0 ? activePalette : harmonyColors;
+    if (paletteToSave.length === 0) return;
+
+    toggleFavorite(paletteToSave);
+    setSavedFeedback(true);
+    setTimeout(() => setSavedFeedback(false), 2000);
+  }, [activePalette, harmonyColors, toggleFavorite]);
 
   // Define updateHarmony BEFORE the useEffect that depends on it
   const updateHarmony = useCallback((harmonyType) => {
@@ -464,7 +474,34 @@ export default function App() {
 
             {activePalette.length > 0 && (
               <div className="bg-[#12121a] rounded-2xl p-5 border border-[#1a1a24]">
-                <h3 className="text-xs text-[#8888a0] uppercase tracking-wider font-medium mb-3">Current Palette</h3>
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xs text-[#8888a0] uppercase tracking-wider font-medium">Current Palette</h3>
+                  <button
+                    onClick={handleSavePalette}
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                      savedFeedback || isFavorite(activePalette)
+                        ? 'bg-green-500/20 text-green-400'
+                        : 'bg-[#ff6b4a]/20 text-[#ff6b4a] hover:bg-[#ff6b4a]/30'
+                    }`}
+                  >
+                    {savedFeedback ? (
+                      <>
+                        <Check size={14} />
+                        Saved!
+                      </>
+                    ) : isFavorite(activePalette) ? (
+                      <>
+                        <Heart size={14} className="fill-current" />
+                        Saved
+                      </>
+                    ) : (
+                      <>
+                        <Save size={14} />
+                        Save
+                      </>
+                    )}
+                  </button>
+                </div>
                 <div className="space-y-2">
                   {activePalette.slice(0, 6).map((color, i) => (
                     <div key={i} className="flex items-center gap-3 p-2 rounded-lg hover:bg-[#1a1a24] cursor-pointer transition-colors" onClick={() => handleColorSelect(color)}>
