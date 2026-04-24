@@ -24,6 +24,7 @@ import PaletteHistory, { usePaletteHistory } from './components/PaletteHistory';
 import UIPreviewPanel from './components/UIPreviewPanel';
 import CuratedPalettes from './components/CuratedPalettes';
 import HarmonyMixer from './components/HarmonyMixer';
+import ColorMixer from './components/ColorMixer';
 import VibeHarmony from './components/VibeHarmony';
 import PaintMixer from './components/PaintMixer';
 import ExportPanel from './components/ExportPanel';
@@ -468,7 +469,7 @@ export default function App() {
 
               {activeTab === 'mixer' && (
                 <div className="space-y-6">
-                  <HarmonyMixer baseColor={selectedColor} onPaletteGenerate={handleMixedPalette} />
+                  <ColorMixer baseColor={selectedColor} />
                   <TintsShadePanel baseColor={selectedColor} onColorSelect={handleColorSelect} />
                 </div>
               )}
